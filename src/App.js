@@ -5,8 +5,6 @@ function App() {
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState({});
 
-  console.log(`${API_KEY} and ${BASE_URL}`);
-
   const search = (evt) => {
     if (evt.key === "Enter") {
       fetch(`${BASE_URL}weather?q=${query}&units=metric&APPID=${API_KEY}`)
